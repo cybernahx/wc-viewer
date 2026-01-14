@@ -1,0 +1,111 @@
+{
+    "app_name": "WhatsApp Chat Viewer - Optimized",
+    "version": "2.0.0",
+    "author": "AI Assistant",
+    "description": "Optimized AI-enhanced WhatsApp chat analysis tool with modular architecture",
+    
+    "ui_settings": {
+        "default_theme": "dark",
+        "window_size": "1600x1000",
+        "min_size": "1400x800",
+        "display_limit": 1000,
+        "color_theme": "blue"
+    },
+    
+    "ai_settings": {
+        "model_name": "all-MiniLM-L6-v2",
+        "max_features": 1000,
+        "similarity_threshold": 0.3,
+        "n_topics_default": 5,
+        "sentiment_thresholds": {
+            "positive": 0.1,
+            "negative": -0.1
+        }
+    },
+    
+    "parser_settings": {
+        "supported_encodings": ["utf-8", "latin-1", "cp1252"],
+        "date_formats": [
+            "%d/%m/%y %H:%M",
+            "%m/%d/%y %H:%M", 
+            "%d/%m/%Y %H:%M",
+            "%d.%m.%y %H:%M",
+            "%d/%m/%y %I:%M %p"
+        ],
+        "system_message_patterns": [
+            ".*added.*",
+            ".*left.*",
+            ".*joined.*",
+            ".*removed.*",
+            ".*changed.*group.*",
+            ".*security code changed.*",
+            ".*end-to-end encrypted.*"
+        ]
+    },
+    
+    "features": {
+        "modules": {
+            "chat_analyzer": {
+                "enabled": true,
+                "description": "AI-powered chat analysis with ML capabilities"
+            },
+            "chat_parser": {
+                "enabled": true, 
+                "description": "Robust WhatsApp chat file parsing"
+            },
+            "main_ui": {
+                "enabled": true,
+                "description": "Clean, optimized user interface"
+            }
+        },
+        
+        "analysis_features": [
+            "Sentiment Analysis using TextBlob",
+            "Topic Modeling with TF-IDF and K-means",
+            "Conversation Pattern Analysis",
+            "User Behavior Analytics", 
+            "AI-powered Question Answering",
+            "Semantic Search with Sentence Transformers"
+        ],
+        
+        "ui_features": [
+            "Modern CustomTkinter Interface",
+            "Tabbed Interface Design",
+            "Advanced Filtering Options",
+            "Calendar-based Date Selection",
+            "Real-time Statistics",
+            "Export Functionality",
+            "Theme Toggle (Dark/Light)"
+        ]
+    },
+    
+    "optimization_improvements": {
+        "code_structure": [
+            "Separated concerns into dedicated modules",
+            "Eliminated code duplication",
+            "Improved error handling",
+            "Enhanced performance with caching"
+        ],
+        "user_experience": [
+            "Simplified interface layout",
+            "Better navigation with tabs",
+            "Clearer status indicators", 
+            "More intuitive controls",
+            "Faster loading times"
+        ],
+        "maintenance": [
+            "Modular architecture for easier updates",
+            "Clean separation of AI, parsing, and UI logic",
+            "Better documentation and code comments",
+            "Easier testing and debugging"
+        ]
+    },
+    
+    "file_structure": {
+        "launcher.py": "Main entry point with dependency checking",
+        "app.py": "Main application UI and coordination logic",
+        "chat_analyzer.py": "AI analysis and machine learning features",
+        "chat_parser.py": "WhatsApp chat file parsing functionality",
+        "config.json": "Application configuration and settings"
+    }
+}
